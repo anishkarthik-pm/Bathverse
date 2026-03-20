@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { Button, Input } from "@/components/ui";
@@ -7,7 +7,7 @@ import { useAppStore } from "@/lib/store";
 
 type Step = "phone" | "otp" | "name";
 
-export default function AuthPage() {
+function AuthForm() {
   const router = useRouter();
   const params = useSearchParams();
   const next = params.get("next") || "/app/track";
@@ -116,5 +116,13 @@ export default function AuthPage() {
         </p>
       </div>
     </div>
+  );
+}
+
+export default function AuthPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-warm-white" />}>
+      <AuthForm />
+    </Suspense>
   );
 }
