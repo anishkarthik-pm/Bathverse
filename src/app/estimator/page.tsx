@@ -125,7 +125,7 @@ export default function EstimatorPage() {
         {step === 2 && (
           <div>
             <h2 className="font-display text-xl text-slate mb-1">Choose your style</h2>
-            <p className="text-sm text-gray mb-6">We'll tailor material recommendations to match.</p>
+            <p className="text-sm text-gray mb-6">We&apos;ll tailor material recommendations to match.</p>
             <div className="grid grid-cols-3 gap-2">
               {STYLES.map((s) => (
                 <button

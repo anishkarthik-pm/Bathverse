@@ -56,7 +56,7 @@ function AuthForm() {
         {step === "phone" && (
           <div>
             <h2 className="font-display text-xl text-slate mb-1">Your mobile number</h2>
-            <p className="text-sm text-gray mb-6">We'll send a one-time password to verify.</p>
+            <p className="text-sm text-gray mb-6">We&apos;ll send a one-time password to verify.</p>
             <Input
               label="Mobile Number"
               placeholder="98765 43210"
@@ -96,8 +96,8 @@ function AuthForm() {
 
         {step === "name" && (
           <div>
-            <h2 className="font-display text-xl text-slate mb-1">What's your name?</h2>
-            <p className="text-sm text-gray mb-6">We'll use this on your project account.</p>
+            <h2 className="font-display text-xl text-slate mb-1">What&apos;s your name?</h2>
+            <p className="text-sm text-gray mb-6">We&apos;ll use this on your project account.</p>
             <Input
               label="Full Name"
               placeholder="Priya Sharma"
@@ -112,7 +112,7 @@ function AuthForm() {
         )}
 
         <p className="text-xs text-gray text-center mt-6">
-          By continuing, you agree to BathIQ's Terms of Service and Privacy Policy.
+          By continuing, you agree to BathIQ&apos;s Terms of Service and Privacy Policy.
         </p>
       </div>
     </div>
