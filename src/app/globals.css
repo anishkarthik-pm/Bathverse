@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --coral: #C04828;
+  --coral-light: #FAECE7;
+  --coral-dark: #712B13;
+  --warm-white: #FAF8F5;
+  --ops-canvas: #F8F7F4;
+  --slate: #2C2C2A;
+  --gray: #5F5E5A;
+  --mid-gray: #D3D1C7;
+  --light-gray: #F1EFE8;
+  --teal: #0F6E56;
+  --teal-light: #E1F5EE;
+  --blue: #185FA5;
+  --blue-light: #E6F1FB;
+  --purple: #534AB7;
+  --purple-light: #EEEDFE;
+  --amber: #BA7517;
+  --amber-light: #FAEEDA;
+  --white: #FFFFFF;
+  --black-ops: #1A1917;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-slate bg-warm-white;
+    color: var(--slate);
+    background-color: var(--warm-white);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--coral);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .font-mono-data {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .currency {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
